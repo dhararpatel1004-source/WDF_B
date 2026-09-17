@@ -1,114 +1,182 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Timetable - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 95%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        .day {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .day {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
 </head>
 
-<body bgcolor="lavender">
+<body>
 
-<center>
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Class Timetable</h2>
+    </div>
 
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>Class Timetable</h2>
-</div>
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
 
-<hr width="80%">
+    <div class="container">
 
-<a href="home.html">Home</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="login.html">Login</a> |
-<a href="courses.html">Courses</a> |
-<a href="timetable.html">Timetable</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="event.html">Event</a> |
-<a href="result.html">Result</a> |
-<a href="admin.html">Admin</a> |
-<a href="contacts.html">Contact</a> |
+        <h2>Weekly Timetable</h2>
 
+        <div class="day">
 
+            <table>
 
+                <tr>
+                    <th>Day</th>
+                    <th>9:00 - 10:00</th>
+                    <th>10:00 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>1:00 - 2:00</th>
+                </tr>
 
-<hr width="80%">
+                <tr>
+                    <td>Monday</td>
+                    <td>CN</td>
+                    <td>OOP</td>
+                    <td>Maths</td>
+                    <td>DSA</td>
+                </tr>
 
-<h3>Weekly Class Timetable</h3>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>OOP</td>
+                    <td>DSA</td>
+                    <td>CN</td>
+                    <td>Maths</td>
+                </tr>
 
-<p>
-Welcome to the Timetable section.<br>
-Students can check their weekly class schedule below.
-</p>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Maths</td>
+                    <td>CN</td>
+                    <td>DSA</td>
+                    <td>OOP</td>
+                </tr>
 
-<table border="1" cellpadding="8">
+                <tr>
+                    <td>Thursday</td>
+                    <td>DSA</td>
+                    <td>Maths</td>
+                    <td>OOP</td>
+                    <td>CN</td>
+                </tr>
 
-<tr>
-    <th>Day</th>
-    <th>9:00 - 10:00</th>
-    <th>10:00 - 11:00</th>
-    <th>11:15 - 12:15</th>
-    <th>1:00 - 2:00</th>
-</tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>CN</td>
+                    <td>OOP</td>
+                    <td>DSA</td>
+                    <td>Maths</td>
+                </tr>
 
-<tr>
-    <td>Monday</td>
-    <td>Programming in C</td>
-    <td>Engineering Mathematics</td>
-    <td>Web Development</td>
-    <td>Computer Network</td>
-</tr>
+            </table>
 
-<tr>
-    <td>Tuesday</td>
-    <td>Computer Network</td>
-    <td>Programming Lab</td>
-    <td>Engineering Mathematics</td>
-    <td>Web Development Lab</td>
-</tr>
+        </div>
 
-<tr>
-    <td>Wednesday</td>
-    <td>Web Devlopment</td>
-    <td>Programming in C</td>
-    <td>Mathematics</td>
-    <td>Library</td>
-</tr>
+    </div>
 
-<tr>
-    <td>Thursday</td>
-    <td>Counseeling session</td>
-    <td>Computer Network</td>
-    <td>Programming Lab</td>
-    <td>Sports</td>
-</tr>
-
-<tr>
-    <td>Friday</td>
-    <td>Engineering Mathematics</td>
-    <td>computter Network Lab</td>
-    <td>Programming in C</td>
-    <td>Seminar</td>
-</tr>
-
-</table>
-
-<br>
-
-<h3>Timetable Instructions</h3>
-
-<ul align="left" style="display:inline-block;">
-    <li>Reach the classroom 5 minutes before the lecture.</li>
-    <li>Carry the required books and notebooks.</li>
-    <li>Attend all practical sessions.</li>
-    <li>Follow the timetable regularly.</li>
-</ul>
-
-<hr width="80%">
-
-
-
-<hr width="80%">
-
-
-</center>
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
 
 </body>
+
 </html>

@@ -1,83 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Login - Student Portal</title>
+
+    <title>Student Login</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .login-box {
+            width: 350px;
+            background-color: white;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px gray;
+            text-align: center;
+        }
+
+        .login-box h2 {
+            color: #4b2e83;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            background-color: #4b2e83;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            margin-top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #7655ad;
+        }
+
+        .back {
+            display: block;
+            margin-top: 20px;
+            color: #4b2e83;
+            text-decoration: none;
+        }
+
+    </style>
+
 </head>
 
-<body bgcolor="lavender">
 
-<center>
-
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>Student Login</h2>
-</div>
-
-<hr width="80%">
-
-<a href="home.html">Home</a> |
-<a href="login.html">Login</a> |
+<body>
 
 
+    <div class="header">
 
-<hr width="80%">
+        <h1>Charusat Student Portal</h1>
 
-<h3>Login to Your Account</h3>
+    </div>
 
-<p>
-Enter your login credentials to access the Student Portal.
-</p>
 
-<form>
+    <div class="login-box">
 
-<table cellpadding="8">
+        <h2>Student Login</h2>
 
-<tr>
-    <td>Enrollment Number</td>
-    <td><input type="text" placeholder="Enter Enrollment Number"></td>
-</tr>
+        <form action="dashboard.html">
 
-<tr>
-    <td>Password</td>
-    <td><input type="password" placeholder="Enter Password"></td>
-</tr>
+            <input type="text"
+                   placeholder="Enter Student ID"
+                   required>
 
-<tr>
-    <td>User Type</td>
-    <td>
-        <select>
-            <option>Student</option>
-            <option>Faculty</option>
-            <option>Administrator</option>
-        </select>
-    </td>
-</tr>
+            <input type="password"
+                   placeholder="Enter Password"
+                   required>
 
-<tr>
-    <td colspan="2" align="center">
-        <input type="submit" value="Login">
-        <input type="reset" value="Clear">
-    </td>
-</tr>
+            <br>
 
-</table>
+            <button type="submit" class="login-button">
+                Login
+            </button>
 
-</form>
+        </form>
 
-<br>
 
-<h3>Login Instructions</h3>
+        <a href="home.html" class="back">
+            ← Back to Home
+        </a>
 
-<ul align="left" style="display:inline-block;">
-    <li>Enter your Enrollment Number correctly.</li>
-    <li>Use your registered password.</li>
-    <li>Select the appropriate user type.</li>
-    <li>Contact the administrator if you forget your password.</li>
-</ul>
+    </div>
 
-<hr width="80%">
-
-<hr width="80%">
 
 </body>
+
 </html>

@@ -2,85 +2,169 @@
 <html>
 <head>
     <title>Contact - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4b2e83;
+        }
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .contact-box {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .contact-box h3 {
+            color: #4b2e83;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #4b2e83;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
 </head>
 
-<body bgcolor="lavender">
+<body>
 
-<center>
+    <div class="header">
+        <h1>Charusat University Student Portal</h1>
+        <p>Contact Us</p>
+    </div>
 
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>Contact Us</h2>
-</div>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="events.html">Events</a>
+        <a href="admin.html">Admin</a>
+        <a href="contact.html">Contact</a>
+        <a href="logout.html">logout</a>
+    </div>
 
-<hr width="80%">
-<a href="home.html">Home</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="login.html">Login</a> |
-<a href="courses.html">Courses</a> |
-<a href="timetable.html">Timetable</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="event.html">Event</a> |
-<a href="result.html">Result</a> |
-<a href="admin.html">Admin</a> |
-<a href="contacts.html">Contact</a> |
+    <div class="container">
 
+        <h2>Contact Us</h2>
 
-<hr width="80%">
+        <div class="contact">
 
-<h3>Get in Touch</h3>
+            <div class="contact-box">
 
-<p>
-If you have any questions or need assistance,
-please contact the college administration.
-</p>
+                <h3>Contact Details</h3>
 
-<table border="1" cellpadding="8">
-    <tr>
-        <th>Department</th>
-        <th>Contact Details</th>
-    </tr>
+                <p><b>University:</b> Charusat University</p>
+                <p><b>Email:</b> info@charusat.ac.in</p>
+                <p><b>Phone:</b> +91 12345 67890</p>
+                <p><b>Address:</b> Changa, Anand, Gujarat</p>
 
-    <tr>
-        <td>Administration Office</td>
-        <td>+91-9876543210</td>
-    </tr>
+            </div>
+            <div class="contact-box">
 
-    <tr>
-        <td>Admission Office</td>
-        <td>+91-9876543211</td>
-    </tr>
+                <h3>Send a Message</h3>
 
-    <tr>
-        <td>Examination Cell</td>
-        <td>+91-9876543212</td>
-    </tr>
+                <form>
 
-    <tr>
-        <td>Student Help Desk</td>
-        <td>+91-9876543213</td>
-    </tr>
-</table>
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter your name">
 
-<br>
+                    <label>Email:</label>
+                    <input type="email" placeholder="Enter your email">
 
-<h3>Office Information</h3>
+                    <label>Message:</label>
+                    <textarea placeholder="Enter your message"></textarea>
 
-<ul align="left" style="display:inline-block;">
-    <li>Address: Charusat University, Changa, Gujarat</li>
-    <li>Email: info@charusatuni.com</li>
-    <li>Website: www.charusatuniversity.com</li>
-    <li>Office Hours: 9:00 AM to 5:00 PM</li>
-</ul>
+                    <button type="submit">Send Message</button>
 
-<hr width="80%">
+                </form>
 
+            </div>
 
+        </div>
 
-<hr width="80%">
+    </div>
 
-
-</center>
+    <div class="footer">
+        <p>© 2026 Charusat University Student Portal</p>
+    </div>
 
 </body>
 </html>

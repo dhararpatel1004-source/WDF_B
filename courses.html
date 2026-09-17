@@ -1,110 +1,195 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Courses - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        /* Grid */
+        .courses {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .course {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 25px;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+    </style>
 </head>
 
-<body bgcolor="lavender">
+<body>
 
-<center>
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Courses</h2>
+    </div>
 
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>Course Details</h2>
-</div>
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
 
-<hr width="80%">
-<a href="home.html">Home</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="login.html">Login</a> |
-<a href="courses.html">Courses</a> |
-<a href="timetable.html">Timetable</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="event.html">Event</a> |
-<a href="result.html">Result</a> |
-<a href="admin.html">Admin</a> |
-<a href="contacts.html">Contact</a> |
+    <div class="container">
 
+        <h2>My Courses</h2>
 
+        <div class="courses">
 
+            <div class="course">
+                <h3>Computer Networks</h3>
+                <p>ITUC201</p>
+            </div>
 
-<hr width="80%">
+            <div class="course">
+                <h3>Object Oriented Programming</h3>
+                <p>CEUC203</p>
+            </div>
 
-<h3>Available Courses</h3>
+            <div class="course">
+                <h3>Engineering Mathematics</h3>
+                <p>MSUD203</p>
+            </div>
 
-<p>
-Welcome to the Courses section.<br>
-Here you can view the subjects offered in your semester.
-</p>
+            <div class="course">
+                <h3>Data Structures and Algorithms</h3>
+                <p>CSUC201</p>
+            </div>
 
-<table border="1" cellpadding="8">
-    <tr>
-        <th>Course Code</th>
-        <th>Course Name</th>
-        <th>Credits</th>
-    </tr>
+        </div>
 
-    <tr>
-        <td>IT101</td>
-        <td>Programming in C</td>
-        <td>4</td>
-    </tr>
+        <h2>Course Details</h2>
 
+        <table>
 
-    <tr>
-        <td>MA101</td>
-        <td>Engineering Mathematics</td>
-        <td>3</td>
-    </tr>
+            <tr>
+                <th>Code</th>
+                <th>Course</th>
+                <th>Faculty</th>
+            </tr>
 
-    <tr>
-        <td>ITUE203</td>
-        <td>Web Development</td>
-        <td>3</td>
-    </tr>
+            <tr>
+                <td>ITUC201</td>
+                <td>Computer Networks</td>
+                <td>Prof. A</td>
+            </tr>
 
-    <tr>
-        <td>ITUC201</td>
-        <td>Computre Network</td>
-        <td>2</td>
-    </tr>
-</table>
+            <tr>
+                <td>CEUC203</td>
+                <td>Object Oriented Programming</td>
+                <td>Prof. B</td>
+            </tr>
 
-<br>
+            <tr>
+                <td>MSUD203</td>
+                <td>Engineering Mathematics</td>
+                <td>Prof. C</td>
+            </tr>
 
-<h3>Course Objectives</h3>
+            <tr>
+                <td>CSUC201</td>
+                <td>Data Structures and Algorithms</td>
+                <td>Prof. D</td>
+            </tr>
 
-<ul align="left" style="display:inline-block;">
-    <li>Develop programming skills.</li>
-    <li>Understand computer fundamentals.</li>
-    <li>Improve logical thinking.</li>
-    <li>Build communication skills.</li>
-    <li>Strengthen mathematical concepts.</li>
-</ul>
+        </table>
 
-<br><br>
+    </div>
 
-<h3>Semester Information</h3>
-
-<table border="1" cellpadding="8">
-    <tr>
-        <th>Semester</th>
-        <th>Total Subjects</th>
-        <th>Total Credits</th>
-    </tr>
-
-    <tr>
-        <td>Semester 1</td>
-        <td>4</td>
-        <td>16</td>
-    </tr>
-</table>
-
-<hr width="80%">
-
-<hr width="80%">
-
-</center>
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
 
 </body>
+
 </html>

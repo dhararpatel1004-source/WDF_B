@@ -1,101 +1,186 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Result - Student Portal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lavender;
+            color: #333;
+        }
+
+        .header {
+            background-color: bisque;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0px 3px 8px gray;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #7655ad;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px gray;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #eee6ff;
+        }
+
+        .cgpa {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #4b2e83;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
 </head>
 
-<body bgcolor="lavender">
+<body>
 
-<center>
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Examination Result</h2>
+    </div>
 
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>Student Result</h2>
-</div>
+    <div class="navbar">
+        
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">logout</a>
 
-<hr width="80%">
+    </div>
 
-<a href="home.html">Home</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="login.html">Login</a> |
-<a href="courses.html">Courses</a> |
-<a href="timetable.html">Timetable</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="event.html">Event</a> |
-<a href="result.html">Result</a> |
-<a href="admin.html">Admin</a> |
-<a href="contacts.html">Contact</a> |
+    <div class="container">
 
+        <div class="box">
 
+            <h2>Semester Result</h2>
 
+            <table>
 
-<hr width="80%">
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Result</th>
+                </tr>
 
-<h3>Examination Result</h3>
+                <tr>
+                    <td>Computer Networks</td>
+                    <td>85</td>
+                    <td>A</td>
+                    <td>Pass</td>
+                </tr>
 
-<p>
-Welcome to the Result Portal.<br>
-Students can check their semester-wise examination results below.
-</p>
+                <tr>
+                    <td>OOP</td>
+                    <td>82</td>
+                    <td>A</td>
+                    <td>Pass</td>
+                </tr>
 
-<table border="1" cellpadding="8">
+                <tr>
+                    <td>Mathematics</td>
+                    <td>78</td>
+                    <td>B+</td>
+                    <td>Pass</td>
+                </tr>
 
-<tr>
-    <th>Subject</th>
-    <th>Maximum Marks</th>
-    <th>Obtained Marks</th>
-    <th>Grade</th>
-</tr>
+                <tr>
+                    <td>Data Stucture and Algoritms</td>
+                    <td>88</td>
+                    <td>A+</td>
+                    <td>Pass</td>
+                </tr>
 
-<tr>
-    <td>Programming in C</td>
-    <td>100</td>
-    <td>91</td>
-    <td>A+</td>
-</tr>
+            </table>
 
-<tr>
-    <td>Engineering Mathematics</td>
-    <td>100</td>
-    <td>87</td>
-    <td>A</td>
-</tr>
-
-<tr>
-    <td>Web Development</td>
-    <td>100</td>
-    <td>84</td>
-    <td>A</td>
-</tr>
-
-<tr>
-    <td>Computer Network</td>
-    <td>100</td>
-    <td>90</td>
-    <td>A+</td>
-</tr>
-
-</table>
-
-<br>
-
-<h3>Result Summary</h3>
-
-<ul align="left" style="display:inline-block;">
-    <li>Total Marks: 500</li>
-    <li>Marks Obtained: 440</li>
-    <li>Percentage: 88%</li>
-    <li>Result Status: Pass</li>
-    <li>Grade: A</li>
-</ul>
-
-<hr width="80%">
+        </div>
 
 
-<hr width="80%">
+        <div class="box">
 
+            <h2>Overall Performance</h2>
 
-</center>
+            <p class="cgpa">
+                CGPA: 8.5
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal | All Rights Reserved</p>
+    </div>
 
 </body>
+
 </html>

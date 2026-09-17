@@ -1,96 +1,201 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Attendance - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        /* Flexbox */
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        /* Grid */
+        .summary {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .summary div {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 25px;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .summary {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+        }
+
+    </style>
 </head>
 
-<body bgcolor="lavender">
+<body>
 
-<center>
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Attendance</h2>
+    </div>
 
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>Student Attendance</h2>
-</div>
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
 
-<hr width="80%">
+    <div class="container">
 
-<a href="home.html">Home</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="login.html">Login</a> |
-<a href="courses.html">Courses</a> |
-<a href="timetable.html">Timetable</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="event.html">Event</a> |
-<a href="result.html">Result</a> |
-<a href="admin.html">Admin</a> |
-<a href="contacts.html">Contact</a> |
+        <h2>Attendance Summary</h2>
 
+        <div class="summary">
 
-<hr width="80%">
+            <div>
+                <h3>Overall</h3>
+                <p>85%</p>
+            </div>
 
-<h3>Attendance Details</h3>
+            <div>
+                <h3>Present</h3>
+                <p>85</p>
+            </div>
 
-<p>
-Welcome to the Attendance Portal.<br>
-Students can check their subject-wise attendance record below.
-</p>
+            <div>
+                <h3>Absent</h3>
+                <p>15</p>
+            </div>
 
-<table border="1" cellpadding="8">
-    <tr>
-        <th>Subject</th>
-        <th>Total Classes</th>
-        <th>Present</th>
-        <th>Attendance %</th>
-    </tr>
+            <div>
+                <h3>Total Classes</h3>
+                <p>100</p>
+            </div>
 
-    <tr>
-        <td>Programming in C</td>
-        <td>40</td>
-        <td>38</td>
-        <td>95%</td>
-    </tr>
+        </div>
 
-    <tr>
-        <td>Engineering Mathematics</td>
-        <td>42</td>
-        <td>39</td>
-        <td>93%</td>
-    </tr>
+        <h2>Subject Attendance</h2>
 
-    <tr>
-        <td>web development</td>
-        <td>35</td>
-        <td>33</td>
-        <td>94%</td>
-    </tr>
+        <table>
 
-    <tr>
-        <td>computer Network</td>
-        <td>30</td>
-        <td>29</td>
-        <td>97%</td>
-    </tr>
-</table>
+            <tr>
+                <th>Subject</th>
+                <th>Total Classes</th>
+                <th>Present</th>
+                <th>Attendance</th>
+            </tr>
 
-<br>
+            <tr>
+                <td>Computer Networks</td>
+                <td>25</td>
+                <td>23</td>
+                <td>92%</td>
+            </tr>
 
-<h3>Attendance Status</h3>
+            <tr>
+                <td>OOP</td>
+                <td>25</td>
+                <td>21</td>
+                <td>84%</td>
+            </tr>
 
-<ul align="left" style="display:inline-block;">
-    <li>Minimum Required Attendance : 75%</li>
-    <li>Your Overall Attendance : 95%</li>
-    <li>Status : Eligible for Examination</li>
-</ul>
+            <tr>
+                <td>Mathematics</td>
+                <td>25</td>
+                <td>20</td>
+                <td>80%</td>
+            </tr>
 
-<hr width="80%">
+            <tr>
+                <td>Data Structures</td>
+                <td>25</td>
+                <td>22</td>
+                <td>88%</td>
+            </tr>
 
+        </table>
 
+    </div>
 
-<hr width="80%">
-
-
-</center>
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
 
 </body>
+
 </html>

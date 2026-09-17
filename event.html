@@ -1,99 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Events - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+        .events {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .event {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .events {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+        }
+
+    </style>
 </head>
 
-<body bgcolor="lavender">
+<body>
 
-<center>
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>University Events</h2>
+    </div>
 
-<div style="background-color: bisque;">
-    <h1>Charusat University Student Portal</h1>
-    <h2>College Events</h2>
-</div>
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
 
-<hr width="80%">
-<a href="home.html">Home</a> |
-<a href="dashboard.html">Dashboard</a> |
-<a href="login.html">Login</a> |
-<a href="courses.html">Courses</a> |
-<a href="timetable.html">Timetable</a> |
-<a href="attendance.html">Attendance</a> |
-<a href="event.html">Event</a> |
-<a href="result.html">Result</a> |
-<a href="admin.html">Admin</a> |
-<a href="contacts.html">Contact</a> |
+    <div class="container">
 
+        <h2>Upcoming Events</h2>
 
+        <div class="events">
 
-<hr width="80%">
+            <div class="event">
+                <h3>Freshers Party</h3>
+                <p>25 August 2026</p>
+                <p>Welcome event for new students.</p>
+            </div>
 
-<h3>Upcoming College Events</h3>
+            <div class="event">
+                <h3>Tech Fest</h3>
+                <p>5 September 2026</p>
+                <p>Technical competitions and workshops.</p>
+            </div>
 
-<p>
-Welcome to the Events section.<br>
-Here you can find details about upcoming college activities and programs.
-</p>
+            <div class="event">
+                <h3>Sports Day</h3>
+                <p>15 September 2026</p>
+                <p>Sports activities and competitions.</p>
+            </div>
 
-<table border="1" cellpadding="8">
-    <tr>
-        <th>Event Name</th>
-        <th>Date</th>
-        <th>Venue</th>
-    </tr>
+            <div class="event">
+                <h3>Cultural Fest</h3>
+                <p>25 September 2026</p>
+                <p>Music, dance and cultural programs.</p>
+            </div>
 
-    <tr>
-        <td>Freshers Party</td>
-        <td>15 August 2026</td>
-        <td>College Auditorium</td>
-    </tr>
+        </div>
 
-    <tr>
-        <td>Technical Workshop</td>
-        <td>22 August 2026</td>
-        <td>Computer Lab</td>
-    </tr>
+    </div>
 
-    <tr>
-        <td>Sports Day</td>
-        <td>10 September 2026</td>
-        <td>Sports Ground</td>
-    </tr>
-
-    <tr>
-        <td>Cultural Fest</td>
-        <td>25 September 2026</td>
-        <td>Main Campus</td>
-    </tr>
-
-    <tr>
-        <td>Hackathon</td>
-        <td>5 October 2026</td>
-        <td>Innovation Center</td>
-    </tr>
-
-</table>
-
-<br>
-
-<h3>Event Guidelines</h3>
-
-<ul align="left" style="display:inline-block;">
-    <li>Carry your College ID Card.</li>
-    <li>Reach the venue 15 minutes early.</li>
-    <li>Follow the event schedule.</li>
-    <li>Maintain discipline during the event.</li>
-    <li>Participation certificates will be provided.</li>
-</ul>
-
-<br><br>
-
-<hr width="80%">
-
-<hr width="80%">
-
-</center>
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
 
 </body>
+
 </html>
+
+
