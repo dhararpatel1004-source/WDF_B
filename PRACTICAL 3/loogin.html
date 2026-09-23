@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Student Login</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff5ee;
+    color: #333;
+}
+
+header {
+    background-color: #2c6e9e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #164a70;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c6e9e;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    background-color: #2c6e9e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #164a70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>StudentHub</h1>
+
+<p>Student Login</p>
+
+</header>
+
+
+<main>
+
+<section>
+
+<h2>Login Here</h2>
+
+<form onsubmit="return loginSuccess()">
+
+<label for="sid">Student ID:</label>
+
+<br><br>
+
+<input type="text" id="sid" required>
+
+<br><br>
+
+<label for="password">Password:</label>
+
+<br><br>
+
+<input type="password" id="password" required>
+
+<br><br>
+
+<input type="submit" value="Login">
+
+<input type="reset" value="Clear">
+
+</form>
+
+<p>
+Don't have an account?
+<a href="register.html">Register Here</a>
+</p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>© 2026 Charusat Student Portal</p>
+
+</footer>
+
+
+<script>
+
+function loginSuccess() {
+
+    alert("Login Successful! Welcome to StudentHub.");
+
+    window.location.href = "index.html";
+
+    return false;
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        /* Flexbox */
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        /* Grid */
+        .admin {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .admin div {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 25px;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .admin {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Administrator Panel</h2>
+    </div>
+
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div class="container">
+
+        <h2>Admin Dashboard</h2>
+
+        <div class="admin">
+
+            <div>
+                <h3>Students</h3>
+                <p>250 Students</p>
+            </div>
+
+            <div>
+                <h3>Courses</h3>
+                <p>20 Courses</p>
+            </div>
+
+            <div>
+                <h3>Events</h3>
+                <p>4 Upcoming Events</p>
+            </div>
+
+        </div>
+
+
+        <h2>Student Records</h2>
+
+        <table>
+
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Semester</th>
+            </tr>
+
+            <tr>
+                <td>25DIT047</td>
+                <td>Dhara Patel</td>
+                <td>Information Technology</td>
+                <td>3rd</td>
+            </tr>
+
+            <tr>
+                <td>25DIT048</td>
+                <td>Rahul Shah</td>
+                <td>Information Technology</td>
+                <td>3rd</td>
+            </tr>
+
+            <tr>
+                <td>25DIT049</td>
+                <td>Priya Patel</td>
+                <td>Information Technology</td>
+                <td>3rd</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Dashboard</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .summary div {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            /* Grid changes to 4 columns */
+            .summary {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>Charusat Student Portal</h1>
+        <h2>Student Dashboard</h2>
+
+    </div>
+
+
+    <div class="navbar">
+
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+
+    </div>
+
+
+    <div class="container">
+
+        <h2>Welcome, Dhara!</h2>
+
+
+        <div class="summary">
+
+            <div>
+                <h3>Courses</h3>
+                <p>6</p>
+            </div>
+
+            <div>
+                <h3>Attendance</h3>
+                <p>85%</p>
+            </div>
+
+            <div>
+                <h3>CGPA</h3>
+                <p>8.5</p>
+            </div>
+
+            <div>
+                <h3>Events</h3>
+                <p>4</p>
+            </div>
+
+        </div>
+
+
+        <h2>Student Information</h2>
+
+        <table>
+
+            <tr>
+                <th>Information</th>
+                <th>Details</th>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td>Dhara Patel</td>
+            </tr>
+
+            <tr>
+                <td>Student ID</td>
+                <td>25DIT047</td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>Information Technology</td>
+            </tr>
+
+            <tr>
+                <td>Semester</td>
+                <td>3rd Semester</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
+
+</body>
+
+</html>
+

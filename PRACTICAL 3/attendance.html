@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attendance - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        /* Flexbox */
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        /* Grid */
+        .summary {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .summary div {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 25px;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .summary {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Attendance</h2>
+    </div>
+
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div class="container">
+
+        <h2>Attendance Summary</h2>
+
+        <div class="summary">
+
+            <div>
+                <h3>Overall</h3>
+                <p>85%</p>
+            </div>
+
+            <div>
+                <h3>Present</h3>
+                <p>85</p>
+            </div>
+
+            <div>
+                <h3>Absent</h3>
+                <p>15</p>
+            </div>
+
+            <div>
+                <h3>Total Classes</h3>
+                <p>100</p>
+            </div>
+
+        </div>
+
+        <h2>Subject Attendance</h2>
+
+        <table>
+
+            <tr>
+                <th>Subject</th>
+                <th>Total Classes</th>
+                <th>Present</th>
+                <th>Attendance</th>
+            </tr>
+
+            <tr>
+                <td>Computer Networks</td>
+                <td>25</td>
+                <td>23</td>
+                <td>92%</td>
+            </tr>
+
+            <tr>
+                <td>OOP</td>
+                <td>25</td>
+                <td>21</td>
+                <td>84%</td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td>25</td>
+                <td>20</td>
+                <td>80%</td>
+            </tr>
+
+            <tr>
+                <td>Data Structures</td>
+                <td>25</td>
+                <td>22</td>
+                <td>88%</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses - Student Portal</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        /* Grid */
+        .courses {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .course {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 25px;
+        }
+
+        th {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Charusat Student Portal</h1>
+        <h2>Courses</h2>
+    </div>
+
+    <div class="navbar">
+        <a href="courses.html">Courses</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="result.html">Result</a>
+        <a href="event.html">Event</a>
+        <a href="admin.html">Admin</a>
+        <a href="contacts.html">Contact</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div class="container">
+
+        <h2>My Courses</h2>
+
+        <div class="courses">
+
+            <div class="course">
+                <h3>Computer Networks</h3>
+                <p>ITUC201</p>
+            </div>
+
+            <div class="course">
+                <h3>Object Oriented Programming</h3>
+                <p>CEUC203</p>
+            </div>
+
+            <div class="course">
+                <h3>Engineering Mathematics</h3>
+                <p>MSUD203</p>
+            </div>
+
+            <div class="course">
+                <h3>Data Structures and Algorithms</h3>
+                <p>CSUC201</p>
+            </div>
+
+        </div>
+
+        <h2>Course Details</h2>
+
+        <table>
+
+            <tr>
+                <th>Code</th>
+                <th>Course</th>
+                <th>Faculty</th>
+            </tr>
+
+            <tr>
+                <td>ITUC201</td>
+                <td>Computer Networks</td>
+                <td>Prof. A</td>
+            </tr>
+
+            <tr>
+                <td>CEUC203</td>
+                <td>Object Oriented Programming</td>
+                <td>Prof. B</td>
+            </tr>
+
+            <tr>
+                <td>MSUD203</td>
+                <td>Engineering Mathematics</td>
+                <td>Prof. C</td>
+            </tr>
+
+            <tr>
+                <td>CSUC201</td>
+                <td>Data Structures and Algorithms</td>
+                <td>Prof. D</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Charusat Student Portal</p>
+    </div>
+
+</body>
+
+</html>
