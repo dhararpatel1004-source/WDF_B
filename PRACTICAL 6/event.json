@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Freshers Party",
+        "date": "16 August 2026",
+        "venue": "College Auditorium"
+    },
+    {
+        "name": "Sports Day",
+        "date": "28 August 2026",
+        "venue": "Sports Ground"
+    },
+    {
+        "name": "Coding Competition",
+        "date": "5 September 2026",
+        "venue": "Computer Lab"
+    },
+    {
+        "name": "Cultural Fest",
+        "date": "20 September 2026",
+        "venue": "Open Stage"
+    },
+    {
+        "name": "Hackathon",
+        "date": "25 September 2026",
+        "venue": "Computer Lab"
+    }
+]

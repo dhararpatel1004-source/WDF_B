@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>College Events</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff8e8;
+    color: #333;
+}
+
+header {
+    background-color: #2c6e9e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #164a70;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2c6e9e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 12px;
+}
+
+th {
+    background-color: #dceefa;
+}
+
+footer {
+    background-color: #164a70;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.data-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+input[type="text"] {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2c6e9e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #164a70;
+}
+
+.pagination {
+    text-align: center;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Student <portal></portal></h1>
+<p>Upcoming Events</p>
+</header>
+
+<nav>
+<a href="home.html">Home</a> 
+<a href="register.html">Register</a> 
+<a href="login.html">Login</a> 
+<a href="dashboard.html">Dashboard</a> 
+<a href="event.html">Events</a> 
+<a href="admin.html">Admin</a> 
+<a href="faq.html">FAQ</a> 
+<a href="feedback.html">Feedback</a> 
+</nav>
+
+<main>
+
+<section>
+
+<h2>College Events</h2>
+
+<input
+    type="text"
+    id="search"
+    placeholder="Search event..."
+    onkeyup="searchEvents()"
+>
+
+<br><br>
+
+<button onclick="sortEvents()">
+    Sort by Name
+</button>
+
+</section>
+
+
+<section>
+
+<div id="eventList"></div>
+
+</section>
+
+
+<section class="pagination">
+
+<button onclick="previousPage()">
+    Previous
+</button>
+
+<span id="pageNumber">
+    Page 1
+</span>
+
+<button onclick="nextPage()">
+    Next
+</button>
+
+</section>
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+<script>
+    loadEvents();
+</script>
+
+
+
+</body>
+</html>

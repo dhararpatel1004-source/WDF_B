@@ -1,0 +1,22 @@
+[
+    {
+        "question": "How do I register?",
+        "answer": "Go to the Register page and fill in your details.",
+        "category": "Registration"
+    },
+    {
+        "question": "How do I login?",
+        "answer": "Enter your Student ID and password.",
+        "category": "Login"
+    },
+    {
+        "question": "Where can I see events?",
+        "answer": "Visit the Events page.",
+        "category": "Events"
+    },
+    {
+        "question": "How can I contact admin?",
+        "answer": "Use the Feedback page.",
+        "category": "Admin"
+    }
+]
