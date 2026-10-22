@@ -1,0 +1,42 @@
+[
+    {
+        "question": "How can I register as a student?",
+        "answer": "Open the Registration page and fill in all the required details. Submit the form to complete registration.",
+        "category": "Registration"
+    },
+    {
+        "question": "How can I login to the Student Portal?",
+        "answer": "Open the Login page and enter your registered email and password.",
+        "category": "Login"
+    },
+    {
+        "question": "What should I do if I forget my password?",
+        "answer": "Contact the college administrator to reset your password.",
+        "category": "Login"
+    },
+    {
+        "question": "Where can I see college events?",
+        "answer": "You can view upcoming college events on the Events page of the Student Portal.",
+        "category": "Events"
+    },
+    {
+        "question": "How can I search for an event?",
+        "answer": "Go to the Events page and use the search box to search for an event by name.",
+        "category": "Events"
+    },
+    {
+        "question": "Who can access the Admin page?",
+        "answer": "The Admin page is intended for authorized college administrators.",
+        "category": "Admin"
+    },
+    {
+        "question": "Can an admin manage student information?",
+        "answer": "Yes, an authorized admin can manage student and portal-related information.",
+        "category": "Admin"
+    },
+    {
+        "question": "Can I search FAQs?",
+        "answer": "Yes. Use the search box on the FAQ page to search for a question.",
+        "category": "Registration"
+    }
+]

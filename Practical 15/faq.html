@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Portal FAQ</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: lavender;
+    color: #333;
+}
+
+header {
+    background-color: bisque;
+    color: #4b2e83;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
+nav {
+    background-color: #4b2e83;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4b2e83;
+}
+
+h3 {
+    color: #4b2e83;
+}
+
+.data-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+input[type="text"] {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+select {
+    padding: 10px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.answer {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<h1>Student Portal</h1>
+
+<p>Frequently Asked Questions</p>
+
+</header>
+
+
+<nav>
+
+<a href="home.html">Home</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="event.html">Events</a>
+<a href="admin.html">Admin</a>
+<a href="faq.html">FAQ</a>
+<a href="contacts.html">Contact</a>
+<a href="logout.html">logout</a>
+
+
+
+</nav>
+
+
+<main>
+
+
+<section>
+
+<h2>Frequently Asked Questions</h2>
+
+
+<input
+    type="text"
+    id="faqSearch"
+    placeholder="Search question..."
+>
+
+
+<br><br>
+
+
+<select id="category">
+
+    <option value="All">
+        All Categories
+    </option>
+
+    <option value="Registration">
+        Registration
+    </option>
+
+    <option value="Login">
+        Login
+    </option>
+
+    <option value="Events">
+        Events
+    </option>
+
+    <option value="Admin">
+        Admin
+    </option>
+
+</select>
+
+</section>
+
+
+<section>
+
+<div id="faqList">
+
+<p>Loading FAQs...</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<script src="./script.js"></script>
+
+
+</body>
+
+</html>

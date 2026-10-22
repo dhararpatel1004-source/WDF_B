@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>College Events</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: lavender;
+    color: #333;
+}
+
+header {
+    background-color: bisque;
+    color: #4b2e83;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
+nav {
+    background-color: #4b2e83;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4b2e83;
+}
+
+.data-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+input[type="text"] {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4b2e83;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #382260;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Portal</h1>
+
+<p>Upcoming Events</p>
+
+</header>
+
+<nav>
+
+<a href="home.html">Home</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="event.html">Events</a>
+<a href="admin.html">Admin</a>
+<a href="faq.html">FAQ</a>
+<a href="contacts.html">Contact</a>
+<a href="logout.html">logout</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>College Events</h2>
+
+<input
+type="text"
+id="search"
+placeholder="Search event..."
+
+>
+
+<br><br>
+
+<button id="sortButton">
+    Sort by Name
+</button>
+
+</section>
+
+<section>
+
+<div id="eventList">
+
+<p>Loading events...</p>
+
+</div>
+
+</section>
+
+<section class="pagination">
+
+<button id="previousButton">
+    Previous
+</button>
+
+<span id="pageNumber">
+    Page 1
+</span>
+
+<button id="nextButton">
+    Next
+</button>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

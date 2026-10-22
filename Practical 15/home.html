@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Portal - Home</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lavender;
+        }
+
+        .header {
+            background-color: bisque;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+            margin: 5px;
+        }
+
+        .header p {
+            margin: 5px;
+        }
+
+        .navbar {
+            background-color: #4b2e83;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        h2 {
+            color: #4b2e83;
+            text-align: center;
+        }
+
+        .welcome {
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .welcome p {
+            line-height: 1.6;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .service {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service h3 {
+            color: #4b2e83;
+        }
+
+        .login {
+            background-color: bisque;
+            padding: 25px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .login-button {
+            display: inline-block;
+            background-color: #4b2e83;
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+
+        .footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: 768px) {
+
+            .navbar {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .services {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>Charusat Student Portal</h1>
+
+        <p>Welcome to Charusat University</p>
+
+    </div>
+
+    <div class="navbar">
+
+        <a href="home.html">Home</a>
+
+    </div>
+
+    <div class="container">
+
+        <div class="welcome">
+
+            <h2>Welcome to Student Portal</h2>
+
+            <p>
+                Welcome to the Charusat University Student Portal.
+            </p>
+
+            <p>
+                Access your academic information, courses,
+                attendance, timetable, results and university events
+                from one place.
+            </p>
+
+        </div>
+
+
+        <h2>Student Services</h2>
+
+        <div class="services">
+
+            <div class="service">
+
+                <h3>Courses</h3>
+
+                <p>
+                    View your current courses and subjects.
+                </p>
+
+            </div>
+
+            <div class="service">
+
+                <h3>Attendance</h3>
+
+                <p>
+                    Check your attendance percentage.
+                </p>
+
+            </div>
+            <div class="service">
+
+                <h3>Timetable</h3>
+
+                <p>
+                    View your daily class schedule.
+                </p>
+
+            </div>
+            <div class="service">
+
+                <h3>Results</h3>
+
+                <p>
+                    Check your examination results.
+                </p>
+
+            </div>
+            <div class="service">
+
+                <h3>Events</h3>
+
+                <p>
+                    View upcoming university events.
+                </p>
+
+            </div>
+
+            <div class="service">
+
+                <h3>Notices</h3>
+
+                <p>
+                    Get the latest university announcements.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="login">
+
+            <h2>Student Login</h2>
+
+            <p>
+                Login to access your complete student dashboard.
+            </p>
+
+            <a href="login.html" class="login-button">
+                Login
+            </a>
+
+        </div>
+
+    </div>
+    <div class="footer">
+
+        <p>
+            © 2026 Charusat Student Portal | All Rights Reserved
+        </p>
+
+    </div>
+</body>
+</html>

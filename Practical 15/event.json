@@ -1,0 +1,44 @@
+[
+{
+"name": "Freshers Party",
+"date": "15 October 2026",
+"time": "10:00 AM",
+"venue": "College Auditorium",
+"description": "Welcome party for new students."
+},
+{
+"name": "Tech Fest",
+"date": "20 October 2026",
+"time": "9:00 AM",
+"venue": "Computer Department",
+"description": "Technical event with coding and technology activities."
+},
+{
+"name": "Sports Day",
+"date": "25 October 2026",
+"time": "8:00 AM",
+"venue": "College Ground",
+"description": "Annual sports event for students."
+},
+{
+"name": "Cultural Fest",
+"date": "30 October 2026",
+"time": "11:00 AM",
+"venue": "Main Auditorium",
+"description": "Cultural performances, music and dance competitions."
+},
+{
+"name": "Hackathon",
+"date": "5 November 2026",
+"time": "9:00 AM",
+"venue": "IT Lab",
+"description": "A coding competition for students."
+},
+{
+"name": "Annual Day",
+"date": "15 November 2026",
+"time": "5:00 PM",
+"venue": "College Auditorium",
+"description": "Annual celebration and prize distribution."
+}
+]
